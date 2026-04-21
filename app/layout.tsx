@@ -22,7 +22,7 @@ export default function RootLayout({
 
         <main className="pt-32 pb-20 max-w-7xl mx-auto px-6">{children}</main>
 
-        <div className="fixed z-100">{notification}</div>
+        {notification}
       </body>
     </html>
   )
