@@ -69,8 +69,8 @@ export default function PhotoCardDetail({
           </div>
 
           <p className="text-zinc-500 leading-relaxed text-sm lg:text-lg max-w-md">
-            Capturing the intersection of architectural geometry and natural
-            light. An exploration of temporary spaces within the digital realm.
+            Capturing the intersection of architectural geometry and natural light. An exploration
+            of temporary spaces within the digital realm.
           </p>
 
           <div className="pt-4 lg:pt-8 flex flex-col gap-3 lg:gap-4">

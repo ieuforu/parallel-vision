@@ -1,14 +1,8 @@
-export default function PhotoSkeleton({
-  isModal = false,
-}: {
-  isModal?: boolean
-}) {
+export default function PhotoSkeleton({ isModal = false }: { isModal?: boolean }) {
   return (
     <div
       className={`flex flex-col animate-pulse ${
-        isModal
-          ? 'lg:flex-row h-full overflow-hidden'
-          : 'w-full gap-12 min-h-screen'
+        isModal ? 'lg:flex-row h-full overflow-hidden' : 'w-full gap-12 min-h-screen'
       }`}
     >
       <div
@@ -19,11 +13,7 @@ export default function PhotoSkeleton({
         }`}
       />
 
-      <div
-        className={`flex-1 flex flex-col min-h-0 ${
-          isModal ? 'p-6 lg:p-12' : 'py-4'
-        }`}
-      >
+      <div className={`flex-1 flex flex-col min-h-0 ${isModal ? 'p-6 lg:p-12' : 'py-4'}`}>
         <div className="space-y-6 lg:my-auto">
           <div className="space-y-2">
             <div className="h-3 w-24 bg-zinc-200" />

@@ -7,20 +7,7 @@ export default async function HomePage({
 }) {
   const { q } = await searchParams
 
-  const photoIds = [
-    '10',
-    '20',
-    '28',
-    '29',
-    '37',
-    '42',
-    '43',
-    '48',
-    '54',
-    '57',
-    '65',
-    '76',
-  ]
+  const photoIds = ['10', '20', '28', '29', '37', '42', '43', '48', '54', '57', '65', '76']
 
   const allPhotos = photoIds.map((id, i) => ({
     id,
@@ -35,11 +22,7 @@ export default async function HomePage({
   return (
     <div className="space-y-10">
       <div className="max-w-md mx-auto">
-        <form
-          action="/"
-          method="GET"
-          className="group relative max-w-2xl mx-auto"
-        >
+        <form action="/" method="GET" className="group relative max-w-2xl mx-auto">
           <div className="absolute left-5 top-1/2 -translate-y-1/2 text-zinc-400 group-focus-within:text-blue-500 transition-colors">
             <svg
               xmlns="http://www.w3.org/2000/svg"

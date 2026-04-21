@@ -1,11 +1,7 @@
 import PhotoCardDetail from '@/components/photo-card-detail'
 import Link from 'next/link'
 
-export default async function FullPhotoPage({
-  params,
-}: {
-  params: Promise<{ id: string }>
-}) {
+export default async function FullPhotoPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
 
   return (
